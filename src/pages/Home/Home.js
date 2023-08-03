@@ -8,6 +8,9 @@ import Recently from "./Recently/Recently";
 import Recommended from "./Recommended/Recommended";
 import Trending from "./Trending/Trending";
 import ForHome from "./ForHome/ForHome";
+import HomeAbout from "./HomeAbout/HomeAbout";
+import HomeNumberSection from "./HomeNumberSection/HomeNumberSection";
+import HomeHowItWorks from "./HomeHowItWorks/HomeHowItWorks";
 
 const Home = () => {
   return (
@@ -20,6 +23,9 @@ const Home = () => {
       <Recommended></Recommended>
       <Trending></Trending>
       <ForHome></ForHome>
+      <HomeAbout></HomeAbout>
+      <HomeNumberSection></HomeNumberSection>
+      <HomeHowItWorks></HomeHowItWorks>
     </div>
   );
 };

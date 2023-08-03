@@ -10,6 +10,13 @@
     filter: brightness(85%);
 }
 
+.cuHomeWorkbg{
+    background-image: linear-gradient(135deg,
+        #23a999 1%,
+        #00a1ba 52%,
+        #006597); 
+}
+
 #transformedLeftIcon {
     color: #C71F66;
     z-index: 10;

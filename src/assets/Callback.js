@@ -13,6 +13,11 @@ import acParts from "./service/acparts.jpg";
 import beautyCare from "./service/beautycare.webp";
 import homeCleaning from "./service/homecleaning.webp";
 import painting from "./service/paintingservices.webp";
+import whyUs from "./banner/why-choose-us.webp";
+import usp_24_7 from "./usp/usp_24_7.png";
+import gloves from "./usp/usp_gloves.png";
+import mask from "./usp/usp_mask.png";
+import sanitized from "./usp/usp_sanitized.png";
 
 export {
   webIcon,
@@ -30,4 +35,9 @@ export {
   beautyCare,
   homeCleaning,
   painting,
+  whyUs,
+  usp_24_7,
+  gloves,
+  mask,
+  sanitized,
 };
