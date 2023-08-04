@@ -47,7 +47,7 @@ const HomeHowItWorks = () => {
                 </p>
               </div>
             </div>
-            <div className="w-[1px] h-[70px] bg-black ml-[26px] -mt-[8px]" />
+            <div className="w-[1px] h-[70px] bg-black ml-[30px] -mt-[8px]" />
           </div>
           <div className="">
             <div className="flex items-center -mt-[12px]">

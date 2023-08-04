@@ -11,6 +11,7 @@ import ForHome from "./ForHome/ForHome";
 import HomeAbout from "./HomeAbout/HomeAbout";
 import HomeNumberSection from "./HomeNumberSection/HomeNumberSection";
 import HomeHowItWorks from "./HomeHowItWorks/HomeHowItWorks";
+import Customers from "./Customers/Customers";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <HomeAbout></HomeAbout>
       <HomeNumberSection></HomeNumberSection>
       <HomeHowItWorks></HomeHowItWorks>
+      <Customers></Customers>
     </div>
   );
 };
