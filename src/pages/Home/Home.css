@@ -1,0 +1,74 @@
+.cuHomeBannar {
+    background-image:
+        linear-gradient(to bottom, rgba(34, 34, 34, 0.52), rgba(29, 28, 28, 0.73)),
+        url('./../../assets/banner/home-banner.webp');
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 70vh;
+    filter: brightness(85%);
+}
+
+.cuHomeWorkbg {
+    background-image: linear-gradient(135deg,
+            #23a999 1%,
+            #00a1ba 52%,
+            #006597);
+}
+
+#transformedLeftIcon {
+    color: #C71F66;
+    z-index: 10;
+    margin-left: -20px;
+    z-index: 10;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 5vw;
+    padding: 10px;
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    margin-right: 20px;
+}
+
+
+
+#transformedRightIcon {
+    color: #C71F66;
+    z-index: 10;
+    margin-right: -10px;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 5vw;
+    padding: 10px;
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+}
+
+.cuShadow {
+    box-shadow: .5px 1px 5px;
+}
+
+#transformedLeftIconforCustomer {
+    color: #C71F66;
+    z-index: 10;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 5vw;
+    padding: 10px;
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    position: absolute;
+    top: 94%;
+    left: 6%;
+}
+
+#transformedRightIconforCustomer {
+    color: #C71F66;
+    z-index: 10;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 5vw;
+    padding: 10px;
+    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    position: absolute;
+    top: 94%;
+    left: 12%;
+}
