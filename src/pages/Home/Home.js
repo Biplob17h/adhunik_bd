@@ -12,6 +12,7 @@ import HomeAbout from "./HomeAbout/HomeAbout";
 import HomeNumberSection from "./HomeNumberSection/HomeNumberSection";
 import HomeHowItWorks from "./HomeHowItWorks/HomeHowItWorks";
 import Customers from "./Customers/Customers";
+import RequestService from "./RequestService/RequestService";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <HomeNumberSection></HomeNumberSection>
       <HomeHowItWorks></HomeHowItWorks>
       <Customers></Customers>
+      <RequestService></RequestService>
     </div>
   );
 };

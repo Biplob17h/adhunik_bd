@@ -18,6 +18,12 @@ import usp_24_7 from "./usp/usp_24_7.png";
 import gloves from "./usp/usp_gloves.png";
 import mask from "./usp/usp_mask.png";
 import sanitized from "./usp/usp_sanitized.png";
+import serviceRequest from "./service/service-request.png";
+import google from "./store/google.png";
+import apple from "./store/apple.png";
+import facebook from "./social/facebook.svg";
+import instagram from "./social/instagram.svg";
+import linkedin from "./social/linkedin.svg";
 
 export {
   webIcon,
@@ -40,4 +46,10 @@ export {
   gloves,
   mask,
   sanitized,
+  serviceRequest,
+  google,
+  apple,
+  facebook,
+  instagram,
+  linkedin,
 };
