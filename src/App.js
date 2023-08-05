@@ -6,6 +6,7 @@ function App() {
     <div className="max-w-sm md:max-w-full">
       <RouterProvider router={routes}></RouterProvider>
     </div>
+
   );
 }
 

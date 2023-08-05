@@ -32,7 +32,7 @@ const Customers = () => {
         </h1>
         <div>
           <Slider {...settings}>
-            <div className=" w-full flex relative mb-20">
+            <div className=" w-full flex relative mb-32">
               <div className="flex mt-20">
                 <div className="w-1/2 flex ">
                   <div className="w-[50px] h-[full] bg-[#00a1ba] mr-[25px]"></div>

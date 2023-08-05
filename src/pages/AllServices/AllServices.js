@@ -8,10 +8,12 @@ const AllServices = () => {
         {/* all services title */}
       <span className="text-4xl font-semibold">All Services</span>
       {/* 2 side div */}
-        <div className="flex flex-row items-start justify-start mt-10 w-full">
-          {/* button div for services */}
+      <div className="flex flex-row items-start justify-start mt-10 w-full">
+        {/* button div for services */}
         <div className="flex flex-col items-start justify-start s-left">
-          <a href="#ref">AC repair</a>
+          <a href="#ref" className="ease-in duration-500">
+            AC repair
+          </a>
           <a href="">Appliance Repair</a>
           <a href="">Painting & Renovation</a>
           <a href="">Trips & Travels</a>
@@ -25,14 +27,14 @@ const AllServices = () => {
         </div>
         {/* services details div */}
         <div className="s-right pl-10">
-          <AllServiceCard/>                                                
-          <AllServiceCard/>                                                
-          <AllServiceCard/>                                                
-          <AllServiceCard/>                                                
-          <Refrigerator/>                                                
-        </div>
+          <AllServiceCard />
+          <AllServiceCard />
+          <AllServiceCard />
+          <AllServiceCard />
+          <Refrigerator />
         </div>
       </div>
+    </div>
   );
 };
 
