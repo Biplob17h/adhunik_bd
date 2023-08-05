@@ -1,0 +1,20 @@
+.header {
+  img {
+    position: absolute;
+    filter: brightness(50%);
+  }
+  .header-details{
+    position: relative;
+  }
+  .header-service{
+    font-family: 'Poppins', sans-serif;
+  }
+  .rating-point{
+    background-color: #209e61;
+    height: 40px;
+    width: 160px;
+    border-radius: 4px;
+    align-items: baseline;
+    padding-top: 3px;
+  }
+}
