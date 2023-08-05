@@ -29,7 +29,7 @@ const Navbar = () => {
   // for scroll end
   return (
     <div className="w-full mx-auto relative">
-      <div className="navbar bg-white  my-[6px] fixed top-0 mx-auto z-50 mt-0 ">
+      <div className="navbar bg-white  my-[6px] fixed top-0 mx-auto z-50 mt-0  shadow-md">
         <div className="max-w-[1140px] mx-auto ">
           <div className={`${show ? "pr-[65px]" : "pr-[371px] my-2"}`}>
             <img className="w-[130px]" src={webIcon} alt="" />
@@ -57,7 +57,7 @@ const Navbar = () => {
             className={`flex items-center ${
               show ? "ml-[70px]" : "pl-[371px]"
             }`}>
-            <Link className="text-[18px] font-semibold">All Services</Link>
+            <Link className="text-[18px] font-semibold" to='/allservices'>All Services</Link>
             <Link className="text-[18px] font-semibold ml-10">Login</Link>
           </div>
         </div>

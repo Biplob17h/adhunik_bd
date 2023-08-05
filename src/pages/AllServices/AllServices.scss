@@ -3,8 +3,8 @@
 }
 .s-left{
     position: sticky;
-    z-index: 99;
-    top: 2rem;
+    z-index: 1;
+    top: 4rem;
     width: 20%;
 }
 .s-left>a{
@@ -22,4 +22,7 @@
 }
 .s-right{
     border-left: 1px solid #8b8989;
+}
+.active{
+    background: #8b8989;
 }

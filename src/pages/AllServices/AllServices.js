@@ -4,7 +4,7 @@ import AllServiceCard from "./AllServiceCard/AllServiceCard";
 import Refrigerator from "./Refrigerator/Refrigerator";
 const AllServices = () => {
   return (
-      <div className="flex flex-col items-start 2xl:max-w-[1100px] m-auto justify-start s-container relative">
+      <div className="flex flex-col items-start 2xl:max-w-[1100px] m-auto justify-start s-container mt-24 relative">
         {/* all services title */}
       <span className="text-4xl font-semibold">All Services</span>
       {/* 2 side div */}
