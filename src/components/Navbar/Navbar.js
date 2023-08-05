@@ -28,12 +28,12 @@ const Navbar = () => {
   }, [nav]);
   // for scroll end
   return (
-    <div className="w-full mx-auto relative">
+    <div className="w-full mx-auto relative z-[99]">
       <div className="navbar bg-white  my-[6px] fixed top-0 mx-auto z-50 mt-0 ">
         <div className="max-w-[1140px] mx-auto ">
-          <div className={`${show ? "pr-[65px]" : "pr-[371px] my-2"}`}>
+          <Link to='/' className={`${show ? "pr-[65px]" : "pr-[373px] my-2"}`}>
             <img className="w-[130px]" src={webIcon} alt="" />
-          </div>
+          </Link>
           <div className={`${show ? "flex" : "hidden"}`}>
             <div className="flex items-center cursor-pointer">
               <img src={location} alt="" />
@@ -55,9 +55,11 @@ const Navbar = () => {
           </div>
           <div
             className={`flex items-center ${
-              show ? "ml-[70px]" : "pl-[371px]"
+              show ? "ml-[70px]" : "pl-[378px]"
             }`}>
-            <Link className="text-[18px] font-semibold">All Services</Link>
+            <Link to="/allservices" className="text-[18px] font-semibold">
+              All Services
+            </Link>
             <Link className="text-[18px] font-semibold ml-10">Login</Link>
           </div>
         </div>

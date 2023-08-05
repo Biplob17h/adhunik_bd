@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Slider from "react-slick";
-import { acParts, burner } from "../../../assets/Callback";
+import { acParts } from "../../../assets/Callback";
 
 const Recently = () => {
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (

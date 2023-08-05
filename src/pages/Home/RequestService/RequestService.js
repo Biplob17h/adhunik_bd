@@ -8,21 +8,21 @@ const RequestService = () => {
       <div className="max-w-[1140px] mx-auto ">
         <div className="flex justify-between">
           <div className="w-8/12 ">
-            <h1 className="font-semibold text-[28px] pt-5">
+            <h1 className="font-semibold text-[26px] pt-5">
               Can’t find your desired service? Let us know 24/7 in 16516.
             </h1>
             <div className="mt-6 flex">
-              <button className="p-4 rounded-md text-xl font-semibold text-white bg-[#C71F66]  w-[210px]">
+              <button className="p-4 rounded-md text-xl font-semibold text-white bg-[#C71F66]  w-[220px]">
                 Request a service
               </button>
-              <button className="btn btn-ghost h-[60px] text-xl font-semibold text-[#C71F66] bg-transparent ml-5 flex items-center w-[210px] hover:text-white hover:bg-[#C71F66] cuBorderforHomeButton">
+              <button className="btn btn-ghost h-[60px] text-xl font-semibold text-[#C71F66] bg-transparent ml-3 flex items-center w-[220px] hover:text-white hover:bg-[#C71F66] cuBorderforHomeButton">
                 <MdLocalPhone className="-ml-8" />{" "}
                 <span className="ml-5">16516</span>
               </button>
             </div>
           </div>
          
-          <div className="w-4/12  ">
+          <div className="w-4/12  pl-16">
             <img
               className="absolute bottom-0  ml-9"
               src={serviceRequest}

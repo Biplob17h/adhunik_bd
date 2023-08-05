@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Slider from "react-slick";
-import { acParts, beautyCare, burner, homeCleaning } from "../../../assets/Callback";
+import { homeCleaning } from "../../../assets/Callback";
 import { Link } from "react-router-dom";
 
 const Trending = () => {

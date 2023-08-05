@@ -2,10 +2,6 @@ import React from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Slider from "react-slick";
 import {
-  acParts,
-  beautyCare,
-  burner,
-  homeCleaning,
   painting,
 } from "../../../assets/Callback";
 import { Link } from "react-router-dom";
