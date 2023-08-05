@@ -1,0 +1,12 @@
+.other-service>a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+.other-service>a svg{
+    color: #afadad;
+}
+.other-service>a:hover svg{
+    color: black;
+}

@@ -1,0 +1,25 @@
+*{
+    font-family: 'Poppins', sans-serif; 
+}
+.s-left{
+    position: sticky;
+    z-index: 99;
+    top: 2rem;
+    width: 20%;
+}
+.s-left>a{
+    width: 100%;
+    text-align: start;
+    color: #1f1e1e;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: .7rem .6rem;
+    transition: all 250ms ease;
+}
+.s-left>a:hover{
+    background: #F5F5F5;
+    font-weight: 600;
+}
+.s-right{
+    border-left: 1px solid #8b8989;
+}
