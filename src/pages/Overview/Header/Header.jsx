@@ -7,7 +7,7 @@ import { BsDot } from "react-icons/bs";
 const Header = () => {
   return (
     <>
-      <div className="header pb-16 ">
+      <div className="header pb-16 text-white">
         <img
           className="w-full h-[410px] object-cover"
           src="https://i.postimg.cc/Gpz5QzJb/1612862098-paintingservices.jpg"

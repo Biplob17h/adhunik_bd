@@ -14,7 +14,7 @@ const AllServiceCard = () => {
       {/* image sec */}
       <div className="flex flex-row items-center justify-start my-7 gap-7 img-container">
       {/* image container */}
-        <Link>
+        <Link to='/service'>
           <img
             src="https://img.freepik.com/premium-photo/technician-service-removing-air-filter-air-conditioner-cleaning_35076-3617.jpg"
             alt=""

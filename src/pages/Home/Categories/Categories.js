@@ -30,7 +30,7 @@ const Categories = () => {
     nextArrow: <SlickArrowRight />,
   };
   return (
-    <div className="max-w-[1140px] mx-auto bg-white h-[150px] p-10 cuShadow -mt-16 sticky z-20 rounded">
+    <div className="max-w-[1140px] mx-auto bg-white h-[150px] p-10 shadow-md -mt-16 sticky z-20 rounded">
       <Slider {...settings}>
         <div>
           <img className="pl-10" src={ac} alt="" />

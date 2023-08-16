@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { location } from "../../../assets/Callback";
 import { AiOutlineSearch } from "react-icons/ai";
+import LocationDetails from "./LocationDetails/LocationDetails";
 
 const Bannar = () => {
   // for scroll start
@@ -27,7 +28,7 @@ const Bannar = () => {
   }, [nav]);
   // for scroll end
   return (
-    <div className="h-[70vh]  cuHomeBannar mt-[75px]  -z-30">
+    <div className="h-[70vh]  cuHomeBannar mt-[75px]  -z-30">      
       <div className="max-w-[1140px] mx-auto text-center text-white ">
         <h1 className="text-6xl font-bold pt-32 ">Your Personal Assistant</h1>
         <h2 className="text-3xl font-bold pt-6">

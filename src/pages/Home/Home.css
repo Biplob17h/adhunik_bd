@@ -21,12 +21,11 @@
     color: #C71F66;
     z-index: 10;
     margin-left: -20px;
-    z-index: 10;
-    width: 3vw;
-    height: 3vw;
-    border-radius: 5vw;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     padding: 10px;
-    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    box-shadow: rgb(35 35 35 / 10%) 0px 0px 20px 5px;
     margin-right: 20px;
 }
 
@@ -36,11 +35,11 @@
     color: #C71F66;
     z-index: 10;
     margin-right: -10px;
-    width: 3vw;
-    height: 3vw;
-    border-radius: 5vw;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     padding: 10px;
-    box-shadow: rgb(35 35 35 / 50%) 0px 0px 20px 5px;
+    box-shadow: rgb(35 35 35 / 10%) 0px 0px 20px 5px;
 }
 
 .cuShadow {
