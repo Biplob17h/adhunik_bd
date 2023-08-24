@@ -10,7 +10,7 @@ const Profile = () => {
         <Link className="font-semibold">Profile</Link>
       </div>
       <div className="flex flex-row items-start mt-5">
-        <div className="flex flex-col items-start w-1/5 sticky top-5">
+        <div className="flex flex-col items-start w-1/5 sticky top-16">
           <a
             className="w-full hover:bg-slate-200 py-3 pl-4 text-lg font-semibold"
             href=""
