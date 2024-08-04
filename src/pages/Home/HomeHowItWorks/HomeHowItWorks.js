@@ -21,7 +21,7 @@ const HomeHowItWorks = () => {
         <div className="w-1/2 ml-16 ">
           <div className="">
             <div className="flex items-center">
-              <div className="text-white text-center mt-1 cuHomeWorkbg w-[60px] h-[60px]  rounded-full flex items-center justify-center text-2xl">
+              <div className="text-white text-center mt-1 cuHomeWorkbg w-[60px] h-[60px] rounded-full flex items-center justify-center text-2xl">
                 1
               </div>
               <div className="ml-10">

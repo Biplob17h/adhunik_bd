@@ -1,9 +1,11 @@
 import { RouterProvider } from "react-router-dom";
 import routes from "./pages/Routes/Routes";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <div className="max-w-sm md:max-w-full">
+    <div>
+      <Toaster position="top-center" reverseOrder={false} />
       <RouterProvider router={routes}></RouterProvider>
     </div>
 
