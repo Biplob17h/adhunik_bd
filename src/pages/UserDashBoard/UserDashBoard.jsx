@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { MdEdit } from "react-icons/md";
 import toast from "react-hot-toast";
-import Navbar from "../Navbar/Navbar";
-const Profile = () => {
+import Navbar from "../../components/Navbar/Navbar";
+
+const UserDashBoard = () => {
   const navigate = useNavigate();
 
   const handleLogOut = () => {
@@ -59,4 +59,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default UserDashBoard;
