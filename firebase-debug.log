@@ -1,0 +1,76 @@
+[debug] [2024-09-07T17:02:18.987Z] ----------------------------------------------------------------------
+[debug] [2024-09-07T17:02:18.990Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-07T17:02:18.990Z] CLI Version:   13.16.0
+[debug] [2024-09-07T17:02:18.990Z] Platform:      win32
+[debug] [2024-09-07T17:02:18.990Z] Node Version:  v20.17.0
+[debug] [2024-09-07T17:02:18.990Z] Time:          Sat Sep 07 2024 23:02:18 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-09-07T17:02:18.991Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-07T17:02:18.993Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-09-07T17:02:19.075Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-07T17:02:19.075Z] > authorizing via signed-in user (leonali274784@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects\adhunik
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-09-07T17:02:19.677Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-09-07T17:02:19.677Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-07T17:02:23.814Z] Using project from CLI flag: adhunik-bd
+[debug] [2024-09-07T17:02:23.815Z] > refreshing access token with scopes: []
+[debug] [2024-09-07T17:02:23.816Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-07T17:02:23.816Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-07T17:02:24.054Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-07T17:02:24.054Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-07T17:02:24.069Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/adhunik-bd [none]
+[debug] [2024-09-07T17:02:24.603Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/adhunik-bd 403
+[debug] [2024-09-07T17:02:24.603Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/adhunik-bd {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-09-07T17:02:24.604Z] HTTP Error: 403, The caller does not have permission
+[debug] [2024-09-07T17:02:24.604Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project adhunik-bd. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-09-07T17:03:28.947Z] ----------------------------------------------------------------------
+[debug] [2024-09-07T17:03:28.949Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-07T17:03:28.950Z] CLI Version:   13.16.0
+[debug] [2024-09-07T17:03:28.950Z] Platform:      win32
+[debug] [2024-09-07T17:03:28.950Z] Node Version:  v20.17.0
+[debug] [2024-09-07T17:03:28.950Z] Time:          Sat Sep 07 2024 23:03:28 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-09-07T17:03:28.950Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-07T17:03:29.008Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-07T17:03:29.008Z] > authorizing via signed-in user (leonali274784@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\projects\adhunik
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+

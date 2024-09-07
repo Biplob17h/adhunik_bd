@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../layout/Main";
 import Home from "../Home/Home";
-import AllServices from "../AllServices/AllServices";
 import Overview from "../Overview/Overview";
 import Profile from "../../components/Profile/Profile";
 import Login from "../../components/Login/Login";
@@ -10,6 +9,7 @@ import UserDashBoard from "../UserDashBoard/UserDashBoard";
 import DashboardProfilePage from "../UserDashBoard/DashboardProfilePage";
 import DashboardOrderPage from "../UserDashBoard/DashboardOrderPage";
 import UpdateUserProfile from "../UserDashBoard/UpdateUserProfile";
+import Services from "../Services/Services";
 
 const routes = createBrowserRouter([
   {
@@ -21,8 +21,8 @@ const routes = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/allservices",
-        element: <AllServices />,
+        path: "/services",
+        element: <Services />,
       },
       {
         path: "/service",
