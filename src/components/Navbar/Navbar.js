@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
       <div className="h-full flex items-center gap-x-3">
         <div className="h-full flex gap-3">
-          <Link to={'/services'}>
+          <Link to={'/allservices'}>
             <button className="bg-white rounded-full w-28 h-full">
               Services
             </button>

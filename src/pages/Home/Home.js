@@ -291,10 +291,10 @@ const Home = () => {
       </div>
       {/* FAQ sec */}
       <HomeService></HomeService>
-      <Recently></Recently>
-      <Recommended></Recommended>
-      <Trending></Trending>
-      <ForHome></ForHome>
+      {/* <Recently></Recently> */}
+      {/* <Recommended></Recommended> */}
+      {/* <Trending></Trending> */}
+      {/* <ForHome></ForHome> */}
       <HomeAbout></HomeAbout>
       <HomeNumberSection></HomeNumberSection>
       <HomeHowItWorks></HomeHowItWorks>
