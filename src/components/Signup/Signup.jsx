@@ -8,11 +8,10 @@ const SignUp = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
-  const {setRefresh, refresh} = useContext(AuthContext);
-
+  const { setRefresh, refresh } = useContext(AuthContext);
 
   const handleSignUpSubmit = (e) => {
-    setError('')
+    setError("");
     e.preventDefault();
     const form = e.target;
 
@@ -36,74 +35,32 @@ const SignUp = () => {
           toast.success("User signed up successfully please login to continue");
           form.reset();
           navigate("/login");
-          setRefresh(refresh + 1)
-        }
-        else {
-          setError(data?.message)
+          setRefresh(refresh + 1);
+        } else {
+          setError(data?.message);
         }
       });
   };
 
   return (
-    <div className="hero bg-base-200 min-h-screen">
-      <div className="hero-content flex-col min-w-[600px]">
-        <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Sign up now!</h1>
+    <div className="w-full h-full flex flex-col items-center justify-center gap-y-5">
+      <h1 className="text-[2rem] font-bold text-[#1f3e72]">Sign up</h1>
+      <div className="w-[25rem] border flex flex-col gap-y-3 p-10 bg-[#eeeeff]">
+        <div className="w-full flex flex-col gap-y-1">
+          <span className="text-[.9rem]">Name <span className="text-red-500">*</span></span>
+          <input type="text" name="" id="" className="border w-full h-[2.3rem] rounded border-blue-400 px-2" />
         </div>
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form onSubmit={handleSignUpSubmit} className="card-body">
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Name</span>
-              </label>
-              <input
-                type="text"
-                placeholder="Your name"
-                name="name"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Phone</span>
-              </label>
-              <input
-                type="number"
-                name="phone"
-                placeholder="Phone Number"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Password</span>
-              </label>
-              <input
-                type="password"
-                name="password"
-                placeholder="password"
-                className="input input-bordered"
-                required
-              />
-              <label className="label">
-                <h1 className="text-red-600">{error}</h1>
-              </label>
-            </div>
-            <div className="form-control mt-6">
-              <button type="submit" className="btn btn-primary">
-                Sign Up
-              </button>
-            </div>
-          </form>
-        </div>
-        {/* toggle to login page */}
         <div>
-          <h1 className="text-[18px]">
-            {`Already have a account`} <Link className="text-[19px] font-semibold ml-2 hover:underline" to="/login">Login</Link>
-          </h1>
+          <span className="text-[.9rem]">Name <span className="text-red-500">*</span></span>
+          <input type="text" name="" id="" className="border w-full h-[2.3rem] rounded border-blue-400 px-2" />
         </div>
+        <div>
+          <span className="text-[.9rem]">Name <span className="text-red-500">*</span></span>
+          <input type="text" name="" id="" className="border w-full h-[2.3rem] rounded border-blue-400 px-2" />
+        </div>
+      </div>
+      <div>
+        <button className="button">Sign up</button>
       </div>
     </div>
   );

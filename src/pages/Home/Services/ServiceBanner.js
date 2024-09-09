@@ -8,27 +8,6 @@ import ServiceCard from "../../../components/ServiceCard/ServiceCard";
 
 
 const ServiceBanner = () => {
-  // const { data, isError, isLoading } = useProperties();
-  // if (isError) {
-  //   return (
-  //     <div className="wrapper">
-  //       <span>Error while loading data</span>
-  //     </div>
-  //   );
-  // }
-  // if (isLoading) {
-  //   return (
-  //     <div className="wrapper flexCenter" style={{ height: "60vh" }}>
-  //       <PuffLoader
-  //         width="80"
-  //         height="80"
-  //         radius={1}
-  //         color="#4066ff"
-  //         aria-label="puff-loading"
-  //       />
-  //     </div>
-  //   );
-  // }
   return (
     <div id="residencies" className="r-wrapper">
       <div className="paddings innerWidth r-container">
@@ -41,7 +20,7 @@ const ServiceBanner = () => {
           {/* slider */}
           {serviceData.slice(0, 5).map((data, i) => (
             <SwiperSlide key={i}>
-              <ServiceCard data={data}/>
+              <ServiceCard data={data} i={i}/>
             </SwiperSlide>
           ))}
         </Swiper>

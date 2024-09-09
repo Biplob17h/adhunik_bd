@@ -28,11 +28,11 @@ const Navbar = () => {
           <NavLink to="/services">Services</NavLink>
           <a href="mailto:zainkeepscode@gmail.com">Contact</a>
 
-          {/* add property */}
-          <div>Add Property</div>
           {/* login button */}
 
-          <button className="button">Login</button>
+          <Link to="/signup">
+            <button className="button">Login</button>
+          </Link>
         </div>
 
         {/* for medium and small screens */}

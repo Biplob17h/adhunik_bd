@@ -10,6 +10,7 @@ import DashboardProfilePage from "../UserDashBoard/DashboardProfilePage";
 import DashboardOrderPage from "../UserDashBoard/DashboardOrderPage";
 import UpdateUserProfile from "../UserDashBoard/UpdateUserProfile";
 import Services from "../Services/Services";
+import Categories from "../Home/Categories/Categories";
 
 const routes = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const routes = createBrowserRouter([
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/categories/:id",
+        element: <Categories />,
       },
       {
         path: "/service",

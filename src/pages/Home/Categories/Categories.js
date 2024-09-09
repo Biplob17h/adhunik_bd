@@ -1,64 +1,26 @@
-import React from "react";
-import Slider from "react-slick";
-import { ac } from "../../../assets/Callback";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { useParams } from "react-router-dom";
+import { serviceData } from "../../../utils/common";
+import CategoryCard from "../../../components/CategoryCard/CategoryCard";
 
 const Categories = () => {
-  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <FaAngleLeft
-      id="transformedLeftIcon"
-      {...props}
-      style={currentSlide === 0 ? { display: "none" } : { display: "block" }}
-    />
-  );
-
-  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <FaAngleRight
-      id="transformedRightIcon"
-      {...props}
-      style={currentSlide === 1 ? { display: "none" } : { display: "block" }}
-    />
-  );
-  const settings = {
-    infinite: false,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    prevArrow: <SlickArrowLeft />,
-    nextArrow: <SlickArrowRight />,
-  };
+  const { id } = useParams();
+  const filteredData = serviceData.filter((item) => item.id === id);
   return (
-    <div className="max-w-[1140px] mx-auto bg-white h-[150px] p-10 shadow-md -mt-16 sticky z-20 rounded">
-      <Slider {...settings}>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-        <div>
-          <img className="pl-10" src={ac} alt="" />
-          <h1>AC Repair Service</h1>
-        </div>
-      </Slider>
+    <div className="h-full">
+      <h1 className="text-[2rem] font-semibold py-10 text-center text-orange-500">
+        {filteredData[0].name}
+      </h1>
+      <div className="xl:max-w-[1200px] mx-auto flex flex-col">
+        {filteredData.map((data, i) => {
+          return (
+            <div className="w-full grid md:grid-cols-4 grid-cols-2 gap-y-5">
+              {data.categories.map((data, i) => {
+                return <CategoryCard key={i} data={data} />;
+              })}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

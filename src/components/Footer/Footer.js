@@ -1,64 +1,70 @@
 import React from "react";
-import { apple, facebook, google, instagram, linkedin } from "../../assets/Callback";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { HiBuildingOffice } from "react-icons/hi2";
+import { FaFacebook } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="w-full">
-      <div className="w-[1140px] mx-auto  pt-20 flex">
-        <div className="w-7/12 flex justify-between">
-          <div>
-            <h1 className="text-lg font-bold">CONTACT</h1>
-            <div className="text-[19px] mt-5 ">
-              <p>16516</p>
-              <p>info@adhunikbd.xyz</p>
-            </div>
-            <div className="text-[19px] mt-5 ">
-              <p className="font-semibold">Corporate Address</p>
-              <p>House 454, Road No: 31,</p>
-              <p>Mohakhali DOHS, Dhaka</p>
-            </div>
+    <div className="w-full bg-slate-100 py-10">
+      <div className="xl:max-w-[1200px] mx-auto flex gap-x-32">
+        <div className="flex flex-col gap-y-3">
+          <div className="flex flex-col gap-y-2">
+            <span className="text-[1.1rem] font-bold text-[#1f3e72]">
+              contact
+            </span>
+            <span className="flex items-center gap-x-2 text-zinc-600 font-medium">
+              <FaPhoneAlt className="text-blue-500 text-[1.2rem]" />
+              +8801971455388
+            </span>
+            <span className="flex items-center gap-x-2 text-zinc-600 font-medium">
+              <MdEmail className="text-blue-500 text-[1.2rem]" />
+              info.adhunikbd@gmail.com
+            </span>
           </div>
-          <div>
-            <h1 className="text-lg font-bold">OTHER PAGES</h1>
-            <div className="mt-4">
-              <h1 className="text-[19px] ">Blog</h1>
-              <h1 className="text-[19px] mt-2">Help</h1>
-              <h1 className="text-[19px] mt-2">Terms of use</h1>
-              <h1 className="text-[19px] mt-2">Privacy Policy</h1>
-              <h1 className="text-[19px] mt-2">Sitemap</h1>
-            </div>
-          </div>
-          <div>
-            <h1 className="text-lg font-bold">COMPANY</h1>
-            <div className="mt-4">
-              <h1 className="text-[19px] ">sManager</h1>
-              <h1 className="text-[19px] mt-2">sBusiness</h1>
-              <h1 className="text-[19px] mt-2">sDelivery</h1>
-              <h1 className="text-[19px] mt-2">sBondhu</h1>
-            </div>
+          <div className="flex flex-col gap-y-2">
+            <span className="text-[1.1rem] font-bold text-[#1f3e72]">
+              address
+            </span>
+            <span className="flex items-center gap-x-2 text-zinc-600 font-medium">
+              <HiBuildingOffice className="text-blue-500 text-[1.2rem]" />
+              Shop-286/E, Boro Mogbazar, Dhaka 1217
+            </span>
           </div>
         </div>
-        <div className="w-5/12 text-right">
-          <h1 className="text-lg font-bold">DOWNLOAD OUR APP</h1>
-          <p className="text-[18px] mt-4">
-            Tackle your to-do list wherever you are <br /> with our mobile app &
-            make your life <br /> easy.
-          </p>
-          <div className="flex justify-end mt-4">
-            <img className="w-[170px] mr-3 cursor-pointer" src={apple} alt="" />
-            <img className="w-[170px] cursor-pointer" src={google} alt="" />
-          </div>
-          <div className="flex justify-end mt-5">
-            <img className="mr-4 cursor-pointer" src={facebook} alt="" />
-            <img className="mr-4 cursor-pointer" src={linkedin} alt="" />
-            <img className="cursor-pointer" src={instagram} alt="" />
+        <div className="flex flex-col gap-y-2">
+          <span className="text-[1.1rem] font-bold text-[#1f3e72]">pages</span>
+          <ul className="text-zinc-600 font-medium flex flex-col gap-y-1">
+            <li className="hover:underline hover:text-blue-500 cursor-pointer transition-colors">
+              shop
+            </li>
+            <li className="hover:underline hover:text-blue-500 cursor-pointer transition-colors">
+              services
+            </li>
+            <li className="hover:underline hover:text-blue-500 cursor-pointer transition-colors">
+              about us
+            </li>
+            <li className="hover:underline hover:text-blue-500 cursor-pointer transition-colors">
+              contact us
+            </li>
+            <li className="hover:underline hover:text-blue-500 cursor-pointer transition-colors">
+              privacy policy
+            </li>
+            <li className="hover:underline hover:text-blue-500 cursor-pointer transition-colors">
+              terms & condition
+            </li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-y-2">
+          <span className="text-[1.1rem] font-bold text-[#1f3e72]">
+            follow us
+          </span>
+          <div className="flex items-center gap-x-3">
+            <FaFacebook className="text-blue-500 text-[1.5rem] cursor-pointer" />
+            <AiFillInstagram className="text-blue-500 text-[1.5rem] cursor-pointer" />
           </div>
         </div>
-      </div>
-      <div className="mt-5 bg-[rgba(0,0,0,.05)] h-[70px] text-center pt-6">
-        <h1 className="text-[18px]">
-          Copyright © 2023 Sheba Platform Limited | All Rights Reserved
-        </h1>
       </div>
     </div>
   );
